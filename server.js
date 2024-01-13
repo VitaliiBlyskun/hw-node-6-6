@@ -5,6 +5,8 @@ const app = require("./app");
 const DB_HOST =
   "mongodb+srv://Vitalii:c4HooFQ8bqII7Z7K@cluster0.qadk5yu.mongodb.net/contacts_reader?retryWrites=true&w=majority";
 
+  console.log(process.env)
+
 mongoose
   .connect(DB_HOST)
   .then(() =>
